@@ -6,16 +6,16 @@ function Navbar() {
     const navItems = (
         <>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink className='text-[#312e2e]' to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about">About Us</NavLink>
+            <NavLink className='text-[#464040]' to="/about">About Us</NavLink>
           </li>
         </>
       );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-[#FFFFFF] shadow-sm mb-9 rounded-2xl mt-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

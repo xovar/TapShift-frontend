@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10">
       <aside>
-        {<TapShiftLogo />}
+        {<TapShiftLogo color="white" />}
         <p className="font-bold">
           ACME Industries Ltd.
           <br />
