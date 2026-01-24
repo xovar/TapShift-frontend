@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
+import TapShiftLogo from "../TapShiftLogo/TapShiftLogo";
 
 function Navbar() {
     const navItems = (
@@ -41,7 +42,7 @@ function Navbar() {
             {navItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className=""><TapShiftLogo/></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
