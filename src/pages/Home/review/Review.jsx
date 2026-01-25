@@ -4,11 +4,26 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { reviewData } from "../../../data/review.data";
+import img from "../../../assets/customer-top.png";
+import reviewIcon from "../../../assets/reviewQuote.png";
+
 
 export default function TestimonialCarousel() {
   return (
-    <section className="bg-[#f5f6f6] py-20">
-  {/* ... existing Header ... */}
+    <section className="py-20">
+   <div className="text-center mb-14">
+        <div className="flex justify-center mb-10">
+            <img src={img} alt="" />
+        </div>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#003c3c]">
+          What our customers are sayings
+        </h2>
+        <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+          Enhance posture, mobility, and well-being effortlessly with Posture
+          Pro.
+        </p>
+      </div>
+
 
   <Swiper
     modules={[Navigation, Pagination]}
@@ -32,12 +47,12 @@ export default function TestimonialCarousel() {
         "--swiper-pagination-bullet-horizontal-gap": "4px"
     }}
     breakpoints={{ 768: { slidesPerView: 3 } }}
-    className="max-w-6xl mx-auto !pb-12" // Add padding to bottom for controls
+    className="max-w-6xl mx-auto pb-12!" // Add padding to bottom for controls
   >
     {reviewData.map((item, index) => (
       <SwiperSlide key={index}>
         <div className="testimonial-card">
-              <span className="text-6xl text-teal-200 font-bold">“</span>
+              <img src={reviewIcon} alt="" />
 
               <p className="text-black mb-6 font-medium text-[16px]">{item.review}</p>
 
