@@ -4,6 +4,7 @@ import ServiceSection from '../serviceSection/ServiceSection';
 import Work from '../work/Work';
 import Collab from '../collab/Collab';
 import BenefitsSection from '../benefitsSection/benefitsSection';
+import Merchant from '../../merchant/Merchant';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <ServiceSection/>
       <Collab/>
       <BenefitsSection/>
+      <Merchant/>
     </div>
   );
 }
