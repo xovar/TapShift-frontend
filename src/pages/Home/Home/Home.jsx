@@ -3,6 +3,7 @@ import Banner from '../banner/Banner';
 import ServiceSection from '../serviceSection/ServiceSection';
 import Work from '../work/Work';
 import Collab from '../collab/Collab';
+import BenefitsSection from '../benefitsSection/benefitsSection';
 
 function Home() {
   return (
@@ -10,7 +11,8 @@ function Home() {
       <Banner/>
       <Work/>
       <ServiceSection/>
-      <Collab></Collab>
+      <Collab/>
+      <BenefitsSection/>
     </div>
   );
 }
