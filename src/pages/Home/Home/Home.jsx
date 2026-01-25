@@ -6,6 +6,7 @@ import Collab from '../collab/Collab';
 import BenefitsSection from '../benefitsSection/benefitsSection';
 import Merchant from '../../merchant/Merchant';
 import TestimonialCarousel from '../review/Review';
+import FaqSection from '../faq/FaqSection';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <BenefitsSection/>
       <Merchant/>
       <TestimonialCarousel/>
+      <FaqSection/>
     </div>
   );
 }
