@@ -1,5 +1,5 @@
 import React from "react";
-import googleIcon from "../../../assets/Google__G__Logo 1.png";
+import googleIcon from "../../../../assets/Google__G__Logo 1.png";
 import { useForm } from "react-hook-form";
 
 export default function Login() {
