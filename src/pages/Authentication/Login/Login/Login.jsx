@@ -1,6 +1,7 @@
 import React from "react";
-import googleIcon from "../../../../assets/Google__G__Logo 1.png";
 import { useForm } from "react-hook-form";
+import GoogleButton from "../../../shared/GoogleButton/GoogleButton";
+import { Link } from "react-router";
 
 export default function Login() {
   const { register, handleSubmit } = useForm();
@@ -42,14 +43,9 @@ export default function Login() {
           </button>
           <h1 className="text-[16px] font-normal text-[#71717A] mt-3">
             Don't have any account?{" "}
-            <span className="text-[#8FA748]">Register</span>
+            <Link to="/signup" className="text-[#8FA748]">Register</Link>
           </h1>
-          <div className="bg-[#E9ECF1] shadow cursor-pointer hover:bg-[#e5efdd] border-none mt-4 text-black flex justify-center items-center py-2">
-            <img src={googleIcon} alt="" />
-            <h1 className="font-medium text-[14px] ml-2.5 text-black">
-              Login with google
-            </h1>
-          </div>
+          <GoogleButton/>
         </fieldset>
       </div>
     </form>
