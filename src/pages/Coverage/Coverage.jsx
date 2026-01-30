@@ -2,10 +2,10 @@ import CoverageMap from "./CoverageMap";
 
 const Coverage = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-7xl px-4 py-12 bg-white rounded-2xl">
       
       {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-black mb-12.5 ms-43.5">
         We are available in 64 districts
       </h1>
 
